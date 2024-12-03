@@ -1,13 +1,12 @@
 import sys
 import argparse
-from email.policy import default
 
-from utils.reader import image_reader as imread
-from utils.reader import csv_reader, bin_reader, txt_reader, json_reader
-from utils.processor import histogram
-from utils.writer import csv_writer, bin_writer, txt_writer, image_writer, json_writer
+from HT5.utils.reader import csv_reader, json_reader
+from HT5.utils.reader import bin_reader, txt_reader, image_reader as imread
+from HT5.utils.processor import histogram
+from HT5.utils.writer import image_writer
 
-from utils.image_toner import stat_correction, equalization, gamma_correction
+from HT5.utils.image_toner import equalization, gamma_correction, stat_correction
 
 
 def print_args_1():
